@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Dancing+Script&family=Indie+Flower&family=Merriweather:ital@1&family=Sansita+Swashed&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    /* background: linear-gradient(5, 7, 12, 0.75, rgba(5, 7, 12, 0.75));
+    background-image: url(imagenes/fondo.jpg);
+    background-attachment: fixed;
+    background-size: cover; */
+    font-size: 16px;
+    background: rgb(135,160,203);
+    background: linear-gradient(94deg, rgba(135,160,203,1) 73%, rgba(95,90,208,1) 100%);
+    font-family: 'Sansita Swashed', cursive;
+}
+
+/* --------- BARRA DE NAVEGACION -----------*/
+nav{
+    display: flex;
+    justify-content: flex-end;
+    height: 10vh;
+    align-items: center;
+}
+
+nav a{
+    margin: 15px;
+    text-decoration: none;
+    color: white;
+    /* position: sticky */
+}
+
+nav:hover{
+    background-color: rgb(15, 15, 15);
+    opacity: 0.95;
+    transition-duration: 0.2s;
+    transition-property: opacity;
+}
+
+/* SECTION-COLUMNA IZQUIERDA: NOMBRE Y ESTUDIOS */
+
+section{
+    width: 40%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    float: left;
+}
+
+.name{
+    text-align: center;
+    font-size: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.ingenieria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.mecatronica{
+    width: 50px;
+}
+
+.ingenieria, .web{
+    font-size: 1.563rem;
+    text-align: center;
+    margin: 15px;
+}
+
+/*----------- COLUMNA DERECHA -------- */
+
+aside{
+    width: 60%;
+    height: 85vh;
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.estudios{
+    margin: 10px;
+    text-align: center;
+    width: 150px;
+}
+
+.img_estudios{
+    width: 100px;
+}
+
+.img_estudios:hover{
+    transform: scale(2);
+    transition: 2s;
+}
+
+
+/* ----- FOOTER --------- */
+
+main:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+footer{
+    height: auto;
+    width: 100%;
+    background-color: #181a32!important;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer a{
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 30px;
+    margin: 10px;
+    color: white;
+}
