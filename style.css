@@ -134,54 +134,20 @@ footer a{
 }
 
 /* ----- RESPONSIVE DESIGN -------*/
-
-@media screen and (max-width: 800px) {  
-    .name{
-        text-align: center;
-        font-size: 2.5rem;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .ingenieria, .web{
-        font-size: 1.563rem;
-        text-align: center;
-        margin: 10px;
-    }
-
-    .estudios{
-        margin: 10px;
-        text-align: center;
-        width: 100px;
-    }
-
-    .img_estudios{
-        width: 80px;
-    }
-
-  }
   
   @media screen and (max-width: 480px) {
-    body{
-        /* background: linear-gradient(5, 7, 12, 0.75, rgba(5, 7, 12, 0.75));
-        background-image: url(imagenes/fondo.jpg);
-        background-attachment: fixed;
-        background-size: cover; */
-        font-size: 16px;
-        background: rgb(135,160,203);
-        background: linear-gradient(94deg, rgba(135,160,203,1) 73%, rgba(95,90,208,1) 100%);
-        font-family: 'Sansita Swashed', cursive;
-        min-height: 100vh;
+    html{
+        min-height: 100%;
+        position:relative;
     }
 
+    body{
+        margin: 0;
+        /* margin-bottom: 40px; */
+    }
     section{
         width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        height: 40vh;
         float: none;
     }
 
@@ -202,12 +168,8 @@ footer a{
 
     aside{
         width: 100%;
-        height: auto;
+        height: 40vh;
         float: none;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
     }
     
     .estudios{
@@ -221,15 +183,7 @@ footer a{
     }
 
     footer{
-        margin-top: auto;
-        width: 100%;
-        background-color: #181a32!important;
-        color: white;
-        text-align: center;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        position: absolute;
+        bottom: 0;
     }
   }
