@@ -131,3 +131,59 @@ footer a{
     margin: 10px;
     color: white;
 }
+
+@media screen and (max-width: 800px) {
+    .name{
+        text-align: center;
+        font-size: 1.563rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ingenieria, .web{
+        font-size: 0.938rem;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .estudios{
+        margin: 10px;
+        text-align: center;
+        width: 100px;
+    }
+
+    .img_estudios{
+        width: 80px;
+    }
+
+  }
+  
+  
+  @media screen and (max-width: 400px) {
+    .name{
+        text-align: center;
+        font-size: 1.563rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ingenieria, .web{
+        font-size: 0.938rem;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .estudios{
+        margin: 10px;
+        text-align: center;
+        width: 80px;
+    }
+
+    .img_estudios{
+        width: 50px;
+    }
+  }
