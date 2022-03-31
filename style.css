@@ -136,28 +136,36 @@ footer a{
 /* ----- RESPONSIVE DESIGN -------*/
   
   @media screen and (max-width: 480px) {
-    html{
+    /* html{
         min-height: 100%;
         position:relative;
     }
 
     body{
         margin: 0;
-        /* margin-bottom: 40px; */
+        margin-bottom: 40px;
+    } */
+
+    nav{
+        height: 10vh;
+    }
+
+    main{
+        min-height:calc(100vh- 10vh- 10vh);
     }
     section{
         width: 100%;
-        height: 90vh;
+        height: 75vh;
         float: none;
     }
 
     .name{
         text-align: center;
-        font-size: 3.5rem;
+        font-size: 3.3rem;
     }
 
     .ingenieria, .web{
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         text-align: center;
         margin: 10px;
     }
@@ -175,7 +183,7 @@ footer a{
         margin: 10px;
         text-align: center;
         width: 90%;
-        font-size: 1.8rem;
+        font-size: 1.3rem;
         justify-content: center;
         align-items: center;
     }
@@ -185,7 +193,8 @@ footer a{
     }
 
     footer{
-        position: absolute;
-        bottom: 0;
+        /* position: absolute;
+        bottom: 0; */
+        height: 10vh;
     }
   }
