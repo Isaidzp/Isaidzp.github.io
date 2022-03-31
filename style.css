@@ -14,6 +14,7 @@ body{
     background: rgb(135,160,203);
     background: linear-gradient(94deg, rgba(135,160,203,1) 73%, rgba(95,90,208,1) 100%);
     font-family: 'Sansita Swashed', cursive;
+    min-height: 100vh;
 }
 
 /* --------- BARRA DE NAVEGACION -----------*/
@@ -111,7 +112,7 @@ main:after {
   }
 
 footer{
-    height: auto;
+    margin-top: auto;
     width: 100%;
     background-color: #181a32!important;
     color: white;
@@ -163,6 +164,18 @@ footer a{
   }
   
   @media screen and (max-width: 480px) {
+    body{
+        /* background: linear-gradient(5, 7, 12, 0.75, rgba(5, 7, 12, 0.75));
+        background-image: url(imagenes/fondo.jpg);
+        background-attachment: fixed;
+        background-size: cover; */
+        font-size: 16px;
+        background: rgb(135,160,203);
+        background: linear-gradient(94deg, rgba(135,160,203,1) 73%, rgba(95,90,208,1) 100%);
+        font-family: 'Sansita Swashed', cursive;
+        min-height: 100vh;
+    }
+
     section{
         width: 100%;
         height: auto;
@@ -205,5 +218,18 @@ footer a{
 
     .img_estudios{
         width: 50px;
+    }
+
+    footer{
+        margin-top: auto;
+        width: 100%;
+        background-color: #181a32!important;
+        color: white;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
   }
