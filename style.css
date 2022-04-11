@@ -122,6 +122,7 @@ footer{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-top: 10px;
 }
 
 footer a{
@@ -129,9 +130,40 @@ footer a{
     background-color: transparent;
     cursor: pointer;
     font-size: 30px;
-    margin: 10px;
+    margin: 20px;
+    padding: 5px;
+    border-radius: 50px;
+    transition: all .4s;
     color: white;
 }
+
+.linkedin:hover{
+    box-shadow: 0 10px #1877f2;
+}
+
+.instagram:hover{
+    box-shadow: 0 10px #c32aa3;
+}
+
+.linkedin{
+    color: #1877f2;
+    filter: drop-shadow(10px 10px 10px #1877f2);
+}
+
+.instagram{
+    color: #1877f2;
+    filter: drop-shadow(10px 10px 10px #c32aa3);
+}
+
+.copyright{
+    margin: 15px 0;
+}
+
+/* colores para redes sociales:
+facebook: #1877f2
+whatsapp: # 25d366
+twitter: # 1877f2
+*/
 
 /* ----- RESPONSIVE DESIGN -------*/
   
