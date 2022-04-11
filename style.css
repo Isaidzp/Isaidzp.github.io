@@ -118,11 +118,11 @@ footer{
     color: white;
     text-align: center;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 10px;
+    padding-top: 25px;
 }
 
 footer a{
