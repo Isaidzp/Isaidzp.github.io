@@ -9,13 +9,13 @@
 </head>
 <body>
     <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Acerca de mi</a>
+        <a href="#inicio">Inicio</a>
+        <a href="#studies">Estudios</a>
         <a href="#">Conocimientos</a>
     </nav>
 
     <main>
-        <section>
+        <section id="inicio">
             <div class="name">
                 Isaí Dzul Puga
             </div>
@@ -28,20 +28,26 @@
             <div class="web"><i class="fa-solid fa-laptop-code"  ></i>Front-End Developer</div>
         </section>
 
-        <aside>
+        <aside id="studies">
             <div class="estudios">
-                <img class="img_estudios" src="imagenes/unacar.png" alt="">
-                Ingeniería en Mecatrónica en la Universidad Autónoma del Carmen
+                <img class="img_estudios" id="unacar" src="imagenes/unacar.png" alt="">
+                <div class="description"> 
+                    Ingeniería en Mecatrónica en la Universidad Autónoma del Carmen
+                </div>    
             </div>
 
             <div class="estudios">
                 <img class="img_estudios" src="imagenes/Cinvestav_seal.png" alt="">
-                Diseño y verificación de Circuitos Integrados en el CINVESTAV, unidad Guadalajara
+                <div class="description">
+                    Diseño y verificación de Circuitos Integrados en el CINVESTAV, unidad Guadalajara
+                </div>    
             </div>
 
             <div class="estudios">
                 <img class="img_estudios" src="imagenes/devf-logo-a.png" alt="">
-                Desarrollo Web en DEV.F
+                <div class="description">
+                    Desarrollo Web en DEV.F
+                </div>
             </div>
         </aside>
     </main>
