@@ -14,22 +14,18 @@ body{
 }
 
 /* --------- BARRA DE NAVEGACION -----------*/
-nav{
-    display: flex;
-    justify-content: flex-end;
-    height: 10vh;
-    align-items: center;
-    z-index: 1;
-    position: fixed;
-    width: 100%;
-    top: 0;
-}
 
 nav a{
-    margin: 15px;
     text-decoration: none;
     color: white;
-    /* position: sticky */
+}
+
+.navbar{
+    padding: .5rem 1rem;
+}
+
+.nav-item{
+    margin-right: 15px;
 }
 
 nav:hover{
@@ -205,10 +201,6 @@ twitter: # 1877f2
         margin: 0;
         margin-bottom: 40px;
     } */
-
-    nav{
-        height: 10vh;
-    }
 
     main{
         min-height:calc(100vh- 10vh- 10vh);
