@@ -1,52 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MI CV</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <nav class="pb-3 navbar navbar-expand-md navbar-dark sticky-top"> <!--Color del icono hamburguesa y los nombres que tiene adentro-->
-       
-            <h1 class="navbar-brand">Ícono</h1>
-          <!-- Icono Hamburger -->
-          <button
-            class="navbar-toggler"
-            type = "button"
-            data-bs-toggle="collapse"
-            data-bs-target="#miLista"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <!-- Fin de icono -->
 
-          <div class="navbar-collapse collapse" id="miLista">
-              <div>
+<body>
+    <nav class="pb-2 navbar navbar-expand-md navbar-dark sticky-top"> <!--pb es padding bottom-->
+        <!--Color del icono hamburguesa y los nombres que tiene adentro-->
+
+        <h1 class="navbar-brand"><i class="fa-solid fa-file-code" id="logoNav"></i></h1>
+        <!-- Icono Hamburger -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#miLista"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Fin de icono -->
+
+        <div class="navbar-collapse collapse" id="miLista">
+            <div>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                      <a class="nav-link active" href="#inicio">Inicio</a>
+                        <a class="nav-link active" href="#inicio">Inicio</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active" href="#studies">Estudios</a>
+                        <a class="nav-link active" href="#studies">Estudios</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active" href="#">Programas</a>
+                        <a class="nav-link active" href="#carouselExampleControls">Programas</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active" href="#">Contáctenos</a>
+                        <a class="nav-link active" href="#">Contáctenos</a>
                     </li>
                 </ul>
-              </div>
-          </div>
+            </div>
+        </div>
 
-      </nav>
+    </nav>
 
 
     <main>
@@ -60,22 +59,22 @@
                 Ing. en Mecatrónica
             </div>
 
-            <div class="web"><i class="fa-solid fa-laptop-code"  ></i>Estudiante de Desarrollo Web</div>
+            <div class="web"><i class="fa-solid fa-laptop-code"></i>Estudiante de Desarrollo Web</div>
         </section>
 
         <aside id="studies">
             <div class="estudios">
                 <img class="img_estudios" id="unacar" src="imagenes/unacar.png" alt="">
-                <div class="description"> 
+                <div class="description">
                     Ingeniería en Mecatrónica en la Universidad Autónoma del Carmen
-                </div>    
+                </div>
             </div>
 
             <div class="estudios">
                 <img class="img_estudios" src="imagenes/Cinvestav_seal.png" alt="">
                 <div class="description">
                     Diseño y verificación de Circuitos Integrados en el CINVESTAV, unidad Guadalajara
-                </div>    
+                </div>
             </div>
 
             <div class="estudios">
@@ -87,18 +86,56 @@
         </aside>
     </main>
 
+    <!-- INICIO DE CARRUSEL DE PROGRAMAS QUE MANEJO -->
+    <main class="caru">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <img src="imagenes/html_logo.png" class="img-caru" alt="...">
+                        <img src="imagenes/css.png" class="img-caru" alt="...">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <img src="imagenes/javascriptLogo.png" class="img-caru" alt="...">
+                        <img src="imagenes/solid_logo.png" class="img-caru" alt="...">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </main>
+    <!-- FIN DE CARRUSEL DE PROGRAMAS QUE MANEJO -->
+
+
     <footer>
         <div>
-            <a class="linkedin" href="https://www.linkedin.com/in/isa%C3%ADdp?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BnVl0hsMJQjWbARf1Jw5NTQ%3D%3D" target="blank"> <i class="fa-brands fa-linkedin-in"></i></a>
+            <a class="linkedin"
+                href="https://www.linkedin.com/in/isa%C3%ADdp?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BnVl0hsMJQjWbARf1Jw5NTQ%3D%3D"
+                target="blank"> <i class="fa-brands fa-linkedin-in"></i></a>
 
-            <a class="instagram" href="https://www.instagram.com/isaidzul/?hl=es" target="blank"><i class="fa-brands fa-instagram"></i></a>
+            <a class="instagram" href="https://www.instagram.com/isaidzul/?hl=es" target="blank"><i
+                    class="fa-brands fa-instagram"></i></a>
 
-            <a class="github" href="https://github.com/Isaidzp?tab=repositories" target="blank"><i class="fa-brands fa-github"></i></a>
+            <a class="github" href="https://github.com/Isaidzp?tab=repositories" target="blank"><i
+                    class="fa-brands fa-github"></i></a>
         </div>
-        
-        <marquee class="copyright" behavior="alternate" direction="" scrollamount = "5px" >**Hecho por Isaí Dzul Puga**</marquee>
+
+        <marquee class="copyright" behavior="alternate" direction="" scrollamount="5px">**Hecho por Isaí Dzul Puga**
+        </marquee>
     </footer>
 
     <script src="https://kit.fontawesome.com/ce43055d0e.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

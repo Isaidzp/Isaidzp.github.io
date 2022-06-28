@@ -14,6 +14,10 @@ body{
 }
 
 /* --------- BARRA DE NAVEGACION -----------*/
+#logoNav{
+    text-align: center !important;
+    margin: 10px 0 0 5px !important;
+}
 
 nav a{
     text-decoration: none;
@@ -103,7 +107,21 @@ aside{
     transition: 2s;
 }
 
+/* ------- CARRUSEL DE IMAGENES ------ */
 
+.caru{
+    margin-bottom: 50px;
+}
+
+.img-caru{
+    height: 150px;
+    margin-right: 20px;
+    transition: all 0.5s ease;
+}
+
+.img-caru:hover{
+    transform: scale(0.9);
+}
 
 /* ----- FOOTER --------- */
 
@@ -207,7 +225,8 @@ twitter: # 1877f2
     }
     section{
         width: 100%;
-        height: 85vh;
+        /* height: 85vh;  */
+        height: 100vh; 
         float: none;
     }
 
@@ -242,6 +261,13 @@ twitter: # 1877f2
 
     #unacar{
         height: 150px;
+    }
+
+    /* carrusel */
+
+    .img-caru{
+        height: 100px;
+        margin-right: 10px;
     }
 
     footer{
